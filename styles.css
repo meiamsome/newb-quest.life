@@ -11,17 +11,16 @@ body {
     width: 100vw;
     height: 100vh;
     font-size: 1vh;
+    overflow: hidden;
 }
 
 iframe {
     width: 100%;
     height: 100%;
-    max-height: 100vh;
+    max-height: 80vh;
 }
 
 .status-bar {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     height: 20vh;
     background: #383b2e;
@@ -41,14 +40,22 @@ iframe {
     align-items: stretch;
 }
 
+.tony, .cj {
+    display: flex;
+}
+
+.cj {
+    flex-direction: row-reverse;
+}
+
+.cj img {
+    opacity: 0.4;
+}
+
 .character-slot .title {
     display: flex;
     align-items: center;
     padding: 0.3em;
-}
-
-.tony {
-    height: 100%;
 }
 
 .health {
@@ -58,6 +65,11 @@ iframe {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.status-picture img {
+    width: 100%;
+    height: 100%;
 }
 
 .bevel-box {
