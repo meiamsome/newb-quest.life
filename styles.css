@@ -8,7 +8,6 @@ body {
     color: white;
     font-family: 'Press Start 2P', monospace;
     text-align: center;
-    width: 100vw;
     height: 100vh;
     font-size: 1vh;
     overflow: hidden;
@@ -21,7 +20,6 @@ iframe {
 }
 
 .status-bar {
-    width: 100%;
     height: 20vh;
     background: #383b2e;
     text-transform: uppercase;
@@ -36,19 +34,25 @@ iframe {
     height: 100%;
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
 }
 
 .tony, .cj {
     display: flex;
+    flex: 1;
+}
+
+.tony .user-img {
+    background-image: url('/images/nose-bleed-seq-07.png');
 }
 
 .cj {
     flex-direction: row-reverse;
 }
 
-.cj img {
+.cj .user-img {
+    background-image: url('./images/cj-fog.png');
     opacity: 0.2;
 }
 
@@ -60,16 +64,24 @@ iframe {
 
 .health {
     width: 100%;
-    height: 100%;
     padding: 0.2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 1;
 }
 
-.status-picture img {
-    width: 100%;
-    height: 100%;
+.status-picture {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.user-img {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
 }
 
 .bevel-box {
